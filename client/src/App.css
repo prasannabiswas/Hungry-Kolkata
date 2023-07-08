@@ -1,0 +1,30 @@
+/*  
+#EEE2DE // Light Grey - Background - Paragraph
+#EA906C // Skin color - Cards Background
+#B31312 // Maroon-Red - Heading
+#2B2A4C // Deep Blue - Buttons
+*/
+
+body {
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  /* background-color: #EA906C; */
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  background: #EEE2DE;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  /* background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), 
+                    url("https://media.istockphoto.com/id/1254720533/photo/chicken-biryani-with-yogurt-dip-popular-indian-pakistani-non-vegetarian-food.jpg?s=612x612&w=0&k=20&c=mnyhCsS3ysk3W37mpYfOsF2hSHA4a2CV3PDjr8aLdCU="); */
+}

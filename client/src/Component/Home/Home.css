@@ -1,0 +1,169 @@
+/*  
+#EEE2DE // Light Grey - Background - Paragraph
+#EA906C // Skin color - Cards Background
+#B31312 // Maroon-Red - Heading
+#2B2A4C // Deep Blue - Buttons
+*/
+
+.headerText {
+	/* background-color: black; */
+	font-family: 'Caprasimo', cursive;
+	font-size: 3rem;
+	color: #EEE2DE;
+	position: absolute;
+	margin-top: -10%;
+	letter-spacing: 15px;
+	margin-left: 30%;
+}
+
+.headerBgImage {
+	width: 100%;
+	height: 35vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter:blur(3px);
+	-o-filter:blur(3px);
+	-ms-filter:blur(3px);
+	-moz-filter:blur(3px);
+	-webkit-filter:blur(3px);
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url("../../images/headerImage/header-nav.jpeg");
+}
+
+.bg-img1 {
+	background-image: url("https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+
+.bg-img2 {
+	background-image: url("../../images/foodTypeCarousel/pizzaCarouselImage.jpeg");
+}
+
+.carouselItemFoodList {
+	margin-top: 1.5%;
+}
+
+/* Header Dining Section */
+.headerImage{
+	margin: 0;
+	padding: 0;
+	width: 90%;
+	height: 65vh;
+	/* border-left: 2px solid white;
+	border-right: 2px solid white; */
+	transition: all .5s;
+	margin-left: 15px;
+	cursor: pointer;
+	filter: blur(1.5px);
+}
+
+.headerImage:hover {
+	border: 10px solid #EEE2DE;
+	/* border-radius:100%; */
+  	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease; 
+	scale: 0.9;
+	filter: blur(0px);
+	transform: rotate(3deg);
+}
+
+
+.headImageHeading {
+	position: absolute;
+	margin-top: -5%;
+	color: black;
+	text-decoration: 1.5px underline #EEE2DE ;
+	padding: 10px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 5px;
+	font-family: 'Poppins', sans-serif;
+	width: 50%;
+	box-shadow: 2px rgba(0,0,0,0.5);
+}
+
+/* --------------------------- */
+
+.heroText {
+	position: absolute;
+	color: black;
+	margin-top: 50px;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 5rem;
+	text-align: center;
+	padding: 50px;
+	letter-spacing: 2px;
+	color: #2B2A4C;
+}
+
+.leaf1 {
+	margin: 0;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	margin-left: 2%;
+	opacity: 0.4;
+	z-index: 0;
+}
+.leaf2 {
+	margin: 0;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+	margin-left: 20%;
+	margin-top: 160px;
+	opacity: 0.3;
+	z-index: 0;
+	transform: rotate(-35deg);
+}
+.leaf3 {
+	margin: 0;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+	margin-left: 60%;
+	margin-top: 90px;
+	opacity: 0.2;
+	z-index: 0;
+}
+.leaf4 {
+	margin: 0;
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	background-repeat: no-repeat;
+	margin-left: 80%;
+	opacity: 0.3;
+	z-index: 0;
+}
+.leaf5 {
+	margin: 0;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+	margin-left: 40%;
+	opacity: 0.3;
+	z-index: 0;
+}
+.leaf6 {
+	margin: 0;
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	background-repeat: no-repeat;
+	margin-left: 85%;
+	margin-top: 160px;
+	opacity: 0.5;
+	z-index: 0;
+	transform: rotate(-15deg);
+}
+
+

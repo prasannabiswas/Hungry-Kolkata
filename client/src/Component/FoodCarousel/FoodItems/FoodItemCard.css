@@ -1,0 +1,44 @@
+/*  
+#EEE2DE // Light Grey - Background - Paragraph
+#EA906C // Skin color - Cards Background
+#B31312 // Maroon-Red - Heading
+#2B2A4C // Deep Blue - Buttons
+*/
+
+.itemContainer {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.7); */
+    border-radius: 5%;
+    background-color: #EA906C;
+}
+
+.foodItemImage{
+    /* background-color: red; */
+    object-fit: cover;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15%;
+    display: flex;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.foodItemText{
+    color: white;
+    /* background-color: yellow; */
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5%;
+}
