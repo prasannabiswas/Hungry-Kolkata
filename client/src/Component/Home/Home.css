@@ -11,9 +11,9 @@
 	font-size: 3rem;
 	color: #EEE2DE;
 	position: absolute;
-	margin-top: -10%;
+	margin-top: -6%;
 	letter-spacing: 15px;
-	margin-left: 30%;
+	margin-left: 32%;
 }
 
 .headerBgImage {
@@ -47,15 +47,59 @@
 .heroSection {
 	display: flex;
 	position: relative;
-	background-color: yellow;
+	background-color: #EEE2DE;
 	width: 100%;
 	height: 66vh;
+	background-image: url("../../images/transparentImages/veggies.png");
+	background-repeat: no-repeat;
+	background-position: 90%;
+	background-size: contain;
 }
 
 .heroImage {
 	display: flex;
 	position: absolute;
-	margin-left: 450px;
+	margin-left: 50rem;
+	transform: rotate(-10deg);
+}
+
+.heroImagePhone{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	transform: rotateY(180deg);
+	margin-left: -40rem;
+	z-index: 0;
+}
+
+.heroText {
+	position: absolute;
+	
+	/* background-color: #EA906C; */
+	width: 80rem;
+	margin-left: 80px;
+	height: 50vh;
+	border-radius: 20px;
+}
+
+.heroTextHeading {
+	font-family: 'Caprasimo', cursive;
+	color: #B31312;
+	text-align: left;
+	font-size: 3.5rem;
+	line-height: 5rem;
+	letter-spacing: 10px;
+	margin-left: 10%;
+}
+.heroTextHeadingND {
+	color: #2B2A4C;
+}
+
+.heroText, p {
+	color: #EA906C;
+	text-align: left;
+	font-size: 2.1rem;
+	letter-spacing: 3px;
 }
 
 /* Header Dining Section */

@@ -5,13 +5,16 @@ import { Link } from "react-router-dom";
 import NavItems from './NavItems/NavItems';
 import { navlist } from './NavItems/NavbarList';
 
+import navLogo from "../../images/logo/HUNGRYLOGO.webp";
+
 const NavBarPage = () => {
     const [add, setAdd] = useState(0);
   return (
     <>
         <div className='container-sm navPage1'>
             <div className='navContainer row'>
-                <div className='logo-img col' />
+                <div className='col' />
+                <img src={navLogo} className='logo-img' />
                 <div className='col'> 
                     <ul className='navLinks'>
                         {navlist.map((val,key)=>{

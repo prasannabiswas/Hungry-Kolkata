@@ -24,17 +24,6 @@
     color: chartreuse;
 }
 
-.navHead {
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    color: #B31312;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    word-spacing: 5px;
-    letter-spacing: 5px;
-    /* background-color: #2B2A4C; */
-}
-
 /* Navbar for Page 1 */
 .navPage1 {
 	display: flex;
@@ -53,18 +42,12 @@
     margin-left: -5%;
     margin-top: 1.5%;
     position: fixed;
-    /* border: solid white; */
-    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.1)); */
 }
 
 .logo-img{
     position: relative;
     display: inline-block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    background-image: url("../../images/logo/HUNGRYLOGO.webp");
-    width: 110px;
+    width: 180px;
     height: 90px;
     cursor: pointer;
     margin: 0;
@@ -108,6 +91,7 @@
 }
 
 .navItemLogo {
+    color: #B31312;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,17 +102,21 @@
 
 .navItemText {
     font-size: 0.75rem;
+    text-align: center;
+    /* background-color: yellow; */
+    /* padding: 5px; */
+    width: 8rem;
 }
 
 .cartNumber {
     margin-left: 40px;
     margin-top: -10px;
-    padding: 5px;
+    /* padding-top: -15px; */
     text-align: center;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 100%;
+    border-radius: 15px;
     width: 30px;
-    height: 30px;
+    height: 20px;
 }
 

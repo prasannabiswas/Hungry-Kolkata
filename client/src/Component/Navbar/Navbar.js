@@ -11,6 +11,8 @@ import { Link } from 'react-router-dom';
 import { navlist } from './NavItems/NavbarList';
 import NavItems from './NavItems/NavItems';
 
+import navLogo from "../../images/logo/HUNGRYLOGO.webp";
+
 const Header = () => {
   const [add, setAdd] = useState(0);
   return (    
@@ -18,14 +20,13 @@ const Header = () => {
           <Container fluid>
             <Navbar.Brand><Link 
               to="/"
-              className='navHead'
-              >Hungry Kolkata</Link>
+              ><img src={navLogo} className='logo-img' /></Link>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`} />
             <Navbar.Offcanvas
+
               id={`offcanvasNavbar-expand-xl`}
               aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
-              placement="end"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
