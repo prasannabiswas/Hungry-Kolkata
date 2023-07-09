@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
+import heroImg from "../../images/transparentImages/transparentHeaderImage.png";
 import leaf from "../../images/transparentImages/transparentLeaf1.jpeg";
 import dineIn from "../../images/headerImage/dineIn.webp";
 import dineOut from "../../images/headerImage/dineOut.jpeg";
@@ -42,6 +43,22 @@ const Home = () => {
             </div>
 
         </ParallaxLayer>
+        
+        {/* HERO SECTION */}
+        <ParallaxLayer 
+          offset={0.35}
+          speed={1}
+          // style={{
+            // backgroundColor: "red",
+            // height: "66vh",
+            // width: "100%",
+          // }}
+        >
+          <div className='container-fluid heroSection'>
+            <img src={heroImg} className='heroImage'></img>
+          </div>
+
+        </ParallaxLayer>
 
         {/* DineIn Dineout option */}
         <ParallaxLayer
@@ -76,7 +93,7 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={0.9}
+          offset={1.2}
           speed={1.2}
           style={{
             zIndex: "-4",

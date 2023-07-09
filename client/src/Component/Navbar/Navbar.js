@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navbar.css";
 
@@ -8,8 +8,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 
+import { navlist } from './NavItems/NavbarList';
+import NavItems from './NavItems/NavItems';
+
 const Header = () => {
-  return (
+  const [add, setAdd] = useState(0);
+  return (    
     <Navbar expand="xl" className="nav mb-3">
           <Container fluid>
             <Navbar.Brand><Link 
@@ -30,10 +34,28 @@ const Header = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link className='routes' href="#action1">Home</Nav.Link>
-                  <Nav.Link className='routes' href="#action2">Link</Nav.Link>                  
+                  {navlist.map((val,key)=>{
+                      return (
+                          <Nav.Link className='routes'>
+                            <NavItems
+                                key={key}
+                                image = {val.logo}
+                                name = {val.name}
+                                link = {val.link}
+                            />
+                          </Nav.Link>
+                      );
+                  })}  
+                  <Nav.Link>
+                    <Link onClick={()=>{
+                        setAdd(add+1);
+                    }} className='navItemContainer'>
+                        <span className='navItemLogo'><i class="bi bi-cart"></i></span>
+                        <p className='navItemText'>Add-to-Cart</p>
+                    </Link>     
+                    <div className='cartNumber'>{add}</div>   
+                  </Nav.Link>            
                 </Nav>
-
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
