@@ -3,6 +3,10 @@ import { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
+import phone from "../../images/transparentImages/phone.png";
+import veggies from "../../images/transparentImages/veggies.png";
+// import smoke from "../../images/transparentImages/smoke.webp"
+// import heroImg from "../../images/transparentImages/transparentHeaderImage.png";
 import leaf from "../../images/transparentImages/transparentLeaf1.jpeg";
 import dineIn from "../../images/headerImage/dineIn.webp";
 import dineOut from "../../images/headerImage/dineOut.jpeg";
@@ -25,7 +29,7 @@ const Home = () => {
       <Parallax pages={3} ref={ref} style={{top: "0", left: "0"}}>
         
         {/* HEADING SECTION */}
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={0}
           speed={1}
           style={{
@@ -40,6 +44,48 @@ const Home = () => {
                 <NavBarPage />
               <h1 className='headerText'>Hungry Kolkata</h1>
             </div>
+
+        </ParallaxLayer> */}
+
+        <ParallaxLayer
+          offset={0}
+          speed={1}
+          style={{
+              // backgroundColor: "red",
+              // backgroundSize:"cover",
+              backgroundPosition: "center",
+              zIndex: "1",
+          }}
+        > 
+            <div>
+              {/* <div className='headerBgImage' /> */}
+                <NavBarPage />
+              <h1 className='headerText'>Hungry Kolkata</h1>
+            </div>
+
+        </ParallaxLayer>
+        
+        {/* HERO SECTION */}
+        <ParallaxLayer 
+          offset={0.35}
+          speed={1}
+          style={{
+            // backgroundColor: "red",
+            height: "66vh",
+            width: "100%",
+            backgroundImage: {veggies},
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+
+          }}
+        >
+          <div className='container-fluid heroSection'>
+            <div className='container-sm heroText'>
+              <img src={phone} className='heroImagePhone'></img>
+              <h2 className='heroTextHeading'>Selection for a <br/> <span className='heroTextHeadingND'>New Day</span></h2>
+              <p>Delicious meal from the best restaurants</p>
+            </div>
+          </div>
 
         </ParallaxLayer>
 
@@ -76,7 +122,7 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={0.9}
+          offset={1.2}
           speed={1.2}
           style={{
             zIndex: "-4",
