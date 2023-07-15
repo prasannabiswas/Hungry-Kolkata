@@ -12,11 +12,11 @@ import dineIn from "../../images/headerImage/dineIn.webp";
 import dineOut from "../../images/headerImage/dineOut.jpeg";
 import takeAway from "../../images/headerImage/takeAway.jpeg";
 
-import Header from '../Navbar/Navbar';
 import NavBarPage from '../Navbar/NavPage1';
 import "./Home.css";
 
 import FoodItemsList from '../FoodCarousel/FoodItemsList';
+import PizzaCarousel from '../../features/Pizzas/PizzaCarousel';
 
 
 const Home = () => {
@@ -29,9 +29,9 @@ const Home = () => {
       <Parallax pages={3} ref={ref} style={{top: "0", left: "0"}}>
         
         {/* HEADING SECTION */}
-        {/* <ParallaxLayer
+        <ParallaxLayer
           offset={0}
-          speed={1}
+          speed={0.5}
           style={{
               // backgroundColor: "red",
               // backgroundSize:"cover",
@@ -45,30 +45,12 @@ const Home = () => {
               <h1 className='headerText'>Hungry Kolkata</h1>
             </div>
 
-        </ParallaxLayer> */}
-
-        <ParallaxLayer
-          offset={0}
-          speed={1}
-          style={{
-              // backgroundColor: "red",
-              // backgroundSize:"cover",
-              backgroundPosition: "center",
-              zIndex: "1",
-          }}
-        > 
-            <div>
-              {/* <div className='headerBgImage' /> */}
-                <NavBarPage />
-              <h1 className='headerText'>Hungry Kolkata</h1>
-            </div>
-
         </ParallaxLayer>
         
         {/* HERO SECTION */}
         <ParallaxLayer 
           offset={0.35}
-          speed={1}
+          speed={0.5}
           style={{
             // backgroundColor: "red",
             height: "66vh",
@@ -76,7 +58,7 @@ const Home = () => {
             backgroundImage: {veggies},
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-
+            zIndex: "1",
           }}
         >
           <div className='container-fluid heroSection'>
@@ -87,23 +69,7 @@ const Home = () => {
             </div>
           </div>
 
-        </ParallaxLayer>
-
-        {/* DineIn Dineout option */}
-        <ParallaxLayer
-          offset={1}
-          speed={1.2}
-          // className='bg-img1'
-          style={{
-              // backgroundColor: "red",
-              backgroundSize:"cover",
-              backgroundPosition: "center",
-              width: "100%",
-              height: "70vh",
-              zIndex: "1",
-          }}
-        > 
-          <div className='container-fluid' style={{backgroundColor: "rgba(0,0,0,0.5)", width: "100%",height: "70vh"}}>
+          <div className='container-fluid' style={{backgroundColor: "rgba(0,0,0,0.5)", width: "100%",height: "70vh", marginTop: "2%"}}>
             <div className='row'>
               <div className='col img1'>
                 <img src={dineIn} className='headerImage'/>
@@ -118,17 +84,28 @@ const Home = () => {
                 <h4 className='headImageHeading'>#Take Away</h4>
               </div>
             </div>
-          </div>            
+          </div> 
+
+          
+
         </ParallaxLayer>
 
+        {/* DineIn Dineout option */}
         <ParallaxLayer
-          offset={1.2}
-          speed={1.2}
+          offset={1}
+          speed={1}
+          // className='bg-img1'
           style={{
-            zIndex: "-4",
+              // backgroundColor: "red",
+              backgroundSize:"cover",
+              backgroundPosition: "center",
+              width: "100%",
+              zIndex: "1",
+              // marginTop: "-15%",
           }}
-        >
-          <div 
+        > 
+
+<div 
             className='container-fluid'
             style={{
               backgroundColor: "white",
@@ -158,32 +135,87 @@ const Home = () => {
                 zIndex: "1",
               }}
             > 
-              <p className='heroText'>
+              <p className='container heroText'>
                 "Savor culinary delights from your favorite local restaurants with our seamless and convenient food ordering app"
               </p>
               
             </div>
 
           </div>
+
+          <div className='container foodItems'>
+            <div className="row pb-5 mb-4">
+
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="card rounded shadow-sm border-0">
+                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                    <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <ul className="list-inline small">
+                      <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>  
+
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="card rounded shadow-sm border-0">
+                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                    <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <ul className="list-inline small">
+                      <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="card rounded shadow-sm border-0">
+                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                    <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <ul className="list-inline small">
+                      <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div className="card rounded shadow-sm border-0">
+                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                    <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <ul className="list-inline small">
+                      <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          {/* FOOD TYPE CAROUSEL */}
+          <PizzaCarousel />
+                   
         </ParallaxLayer>
 
-        {/* Nav Header Fixed */}
         <ParallaxLayer
-        speed={9}
-          sticky={{start: 1, end:2}}
+          offset={1.8}
+          speed={0.7}
           style={{
-              // position:"fixed",
-              // zIndex: "1",
-              marginTop: "1%",
-              }}
+            zIndex: "-2",
+          }}
         >
-          <Header />
+          
         </ParallaxLayer>
 
         {/* FOOD TYPE CAROUSEL */}
-        <ParallaxLayer
-            offset={2}
-            speed={1}
+        {/* <ParallaxLayer
+            offset={1.5}
+            speed={0.5}
             style={{
                 width: "90%",
                 height: "25vh",
@@ -193,36 +225,20 @@ const Home = () => {
                 borderRadius: "0.625rem",
             }}
         > 
-          <div className='container-sm carouselItemFoodList'>
-            <FoodItemsList />
-          </div>
-        </ParallaxLayer>
+    
+        </ParallaxLayer> */}
 
         {/* FOOTER SECTION */}
         <ParallaxLayer
-            offset={1.3}
-            speed={1}
+            offset={0.8}
+            speed={0}
             className='bg-img2'
             style={{
                 // backgroundColor: "green",
                 backgroundSize:"cover",
                 backgroundPosition: "center",
                 width: "100%",
-                height: "50vh",
-            }}
-        > 
-        </ParallaxLayer>
-
-        <ParallaxLayer
-            offset={1.5}
-            speed={1}
-            className='bg-img2'
-            style={{
-                // backgroundColor: "green",
-                backgroundSize:"cover",
-                backgroundPosition: "center",
-                width: "100%",
-                height: "50vh",
+                height: "98vh",
             }}
         > 
         </ParallaxLayer>
