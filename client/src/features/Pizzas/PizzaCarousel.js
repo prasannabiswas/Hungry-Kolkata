@@ -1,12 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import "./Pizza.css";
+import { addAsync } from '../cart/cartSlice';
 
 // Splider Imports
-import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+// import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 // Default theme
 import '@splidejs/react-splide/css';
 import '@splidejs/react-splide/css/sea-green';
@@ -19,6 +20,7 @@ import Stack from '@mui/material/Stack';
 const PizzaCarousel = () => {
 
   const pizzas = useSelector(state=>state.pizza.pizzas);
+  const dispatch = useDispatch();
 
   const splideOptions = {
     perPage: 5,
@@ -49,12 +51,11 @@ const PizzaCarousel = () => {
         {pizzas.map((items,key)=>{
           return(
             <SplideSlide key={key}>
-        
               <div className="food-card">
                 <div className="food-card_img">
                     <img src={items.image} alt={items.title}/>
                     <a style={{cursor:"pointer"}}><i className="bi bi-heart"></i></a>
-                </div>
+                </div> 
                 <div className="food-card_content">
                   <div className="food-card_title-section">
                     <p className="food-card_title">{items.title}</p>
@@ -67,7 +68,7 @@ const PizzaCarousel = () => {
                     <Stack spacing={1}>                        
                         <Rating name="half-rating-read" defaultValue={items.rating} precision={0.5} readOnly />
                     </Stack>
-                    <div style={{cursor:"pointer", scale: "2"}}><i class="bi bi-bag-plus"></i></div>
+                    <div style={{cursor:"pointer", scale: "2"}} onClick={()=>dispatch(addAsync(items))}><i class="bi bi-bag-plus"></i></div>
                     </div>
                     <hr/>
                     <div className="space-between">

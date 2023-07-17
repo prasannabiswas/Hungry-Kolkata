@@ -1,8 +1,10 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { fetchItems, addItem, updateItem, deleteItem } from './cartAPI';
+import toast from "react-hot-toast";
 
 const initialState = {
   items: [],
+  cartState: false,
   status: 'idle',
 };
 
@@ -17,8 +19,8 @@ export const fetchAsyncItems = createAsyncThunk(
 export const addAsync = createAsyncThunk(
   'cart/addItems',
   async (item) => {
-    const {id,title,description,brand,thumbnail,price} = item;
-    const response = await addItem({id,title,description,brand,thumbnail,price,quantity:1});
+    const {id,title,description,brand,image,price} = item;
+    const response = await addItem({id,title,description,brand,image,price,quantity:1});
     return response.data;
   }
 );
@@ -43,7 +45,12 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    
+    setOpenCart: (state, action) => {
+      state.cartState = action.payload.cartState;
+    },
+    setCloseCart: (state, action) => {
+      state.cartState = action.payload.cartState;
+    },    
   },
   extraReducers: (builder) => {
     builder
@@ -60,11 +67,13 @@ export const cartSlice = createSlice({
       .addCase(addAsync.fulfilled, (state, action) => {
         state.status = 'idle';
         state.items.push(action.payload);
+        toast.success(`${action.payload.title} has added to cart`);
       })
       .addCase(deleteAsync.fulfilled, (state, action) => {
         state.status = 'idle';
         const index = state.items.findIndex(item=>item.id===action.payload)
-        state.items.splice(index,1);
+        toast.success(`${state.items[index].title} removed from cart`);
+        state.items.splice(index,1);        
       })
       .addCase(updateAsync.fulfilled, (state, action) => {
         state.status = 'idle';
@@ -74,6 +83,8 @@ export const cartSlice = createSlice({
   },
 });
 
-// export const {  } = cartsSlice.actions;
+export const { setOpenCart, setCloseCart } = cartSlice.actions;
+
+export const selectCartState = (state) => state.cart.cartState;
 
 export default cartSlice.reducer;
