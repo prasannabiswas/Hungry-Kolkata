@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import toast, { Toaster } from 'react-hot-toast';
 
 import phone from "../../images/transparentImages/phone.png";
 import veggies from "../../images/transparentImages/veggies.png";
@@ -15,19 +16,33 @@ import takeAway from "../../images/headerImage/takeAway.jpeg";
 import NavBarPage from '../Navbar/NavPage1';
 import "./Home.css";
 
-import FoodItemsList from '../FoodCarousel/FoodItemsList';
+// import FoodItemsList from '../FoodCarousel/FoodItemsList';
 import PizzaCarousel from '../../features/Pizzas/PizzaCarousel';
 
 
 const Home = () => {
-    
     const ref = useRef();
+    const pageNo = 3;
 
   return (
-    <div>
+    <div >
 
-      <Parallax pages={3} ref={ref} style={{top: "0", left: "0"}}>
+      <Parallax pages={pageNo} ref={ref} style={{top: "0", left: "0"}}>
         
+        <ParallaxLayer 
+          offset={0}
+          sticky={{start:0, end:3}}
+          style={{
+            backgroundColor: "rgba(0,0,0,0.2)",
+            height: "14%",
+          }}
+        >
+          <Toaster />
+          <NavBarPage />
+          
+          
+        </ParallaxLayer>
+
         {/* HEADING SECTION */}
         <ParallaxLayer
           offset={0}
@@ -40,12 +55,12 @@ const Home = () => {
           }}
         > 
             <div>
-              <div className='headerBgImage' />
-                <NavBarPage />
+              <div className='headerBgImage' />                
               <h1 className='headerText'>Hungry Kolkata</h1>
             </div>
 
-        </ParallaxLayer>
+        </ParallaxLayer>        
+        
         
         {/* HERO SECTION */}
         <ParallaxLayer 
@@ -105,7 +120,7 @@ const Home = () => {
           }}
         > 
 
-<div 
+          <div 
             className='container-fluid'
             style={{
               backgroundColor: "white",
@@ -196,6 +211,8 @@ const Home = () => {
 
             </div>
           </div>
+
+          <Toaster position="top-right" reverseOrder={false} />
           
           {/* FOOD TYPE CAROUSEL */}
           <PizzaCarousel />

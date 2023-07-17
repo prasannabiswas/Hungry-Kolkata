@@ -5,7 +5,9 @@ import Home from './Component/Home/Home';
 
  import { fetchAsyncPizzas } from './features/Pizzas/pizzaSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import NavBarPage from './Component/Navbar/NavPage1';
+import { fetchAsyncItems } from './features/cart/cartSlice';
 
 
 function App() {
@@ -15,16 +17,16 @@ function App() {
 
   useEffect(()=>{
     dispatch(fetchAsyncPizzas());
+    dispatch(fetchAsyncItems());
     console.log(pizzaItems);
   },[]);
 
   return (
     <div className="App">
-      <Routes >
+      <Routes > 
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }
