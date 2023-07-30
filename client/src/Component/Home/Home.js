@@ -12,12 +12,16 @@ import leaf from "../../images/transparentImages/transparentLeaf1.jpeg";
 import dineIn from "../../images/headerImage/dineIn.webp";
 import dineOut from "../../images/headerImage/dineOut.jpeg";
 import takeAway from "../../images/headerImage/takeAway.jpeg";
+import bgImg1 from "../../images/foodTypeCarousel/bgImg1.jpeg";
+import bgImg2 from "../../images/foodTypeCarousel/bgImg2.jpg";
+import bgImg3 from "../../images/foodTypeCarousel/bgImg3.jpg";
 
 import NavBarPage from '../Navbar/NavPage1';
 import "./Home.css";
 
 // import FoodItemsList from '../FoodCarousel/FoodItemsList';
 import PizzaCarousel from '../../features/Pizzas/PizzaCarousel';
+import Footer from '../Footer/Footer';
 
 
 const Home = () => {
@@ -162,9 +166,9 @@ const Home = () => {
             <div className="row pb-5 mb-4">
 
               <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <div className="card rounded shadow-sm border-0">
-                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
-                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                <div className="card rounded shadow-sm border-0" style={{height:"25rem"}}>
+                  <div className="card-body p-4"><img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?w=2000" alt="pizza" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="/" className="text-dark" style={{textDecoration:"none"}}>Pizza's</a></h5>
                     <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <ul className="list-inline small">
                       <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
@@ -174,9 +178,9 @@ const Home = () => {
               </div>  
 
               <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <div className="card rounded shadow-sm border-0">
-                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
-                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                <div className="card rounded shadow-sm border-0" style={{height:"25rem"}}>
+                  <div className="card-body p-4"><img src="https://c.ndtvimg.com/2023-04/6mdgq5vo_thali_625x300_04_April_23.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886" alt="indian-thali" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="/" className="text-dark" style={{textDecoration:"none"}}>Indian Thali's</a></h5>
                     <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <ul className="list-inline small">
                       <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
@@ -186,9 +190,9 @@ const Home = () => {
               </div>
 
               <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <div className="card rounded shadow-sm border-0">
-                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
-                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                <div className="card rounded shadow-sm border-0" style={{height:"25rem"}}>
+                  <div className="card-body p-4"><img src="https://uploads-ssl.webflow.com/5e9ebc3fff165933f19fbdbe/61b31c9d289e22335b6753b2_Ice%20Cream%202.jpg" alt="ice-cream" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="/" className="text-dark" style={{textDecoration:"none"}}>Ice-Cream's</a></h5>
                     <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <ul className="list-inline small">
                       <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
@@ -198,9 +202,9 @@ const Home = () => {
               </div>
 
               <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                <div className="card rounded shadow-sm border-0">
-                  <div className="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" className="img-fluid d-block mx-auto mb-3" />
-                    <h5> <a href="#" className="text-dark">Awesome product</a></h5>
+                <div className="card rounded shadow-sm border-0" style={{height:"25rem"}}>
+                  <div className="card-body p-4"><img src="https://imagevars.gulfnews.com/2022/03/11/Guntur-Gongura-Biryani-_17f793bfa09_large.jpg" alt="biryani" className="img-fluid d-block mx-auto mb-3" />
+                    <h5> <a href="/" className="text-dark" style={{textDecoration:"none"}}>Biryani's</a></h5>
                     <p className="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <ul className="list-inline small">
                       <li className="list-inline-item m-0"><i className="fa fa-star text-success"></i></li>
@@ -220,13 +224,18 @@ const Home = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={1.8}
-          speed={0.7}
+          offset={1.4}
+          speed={0.5}
           style={{
-            zIndex: "-2",
+            width:"100%",
+            height:"auto",
+            filter:"blur(5px)",
+            zIndex: "-1",
           }}
         >
-          
+          <img className='bg-img-back' src={bgImg1} />
+          <img className='bg-img-back' src={bgImg2} />
+          <img className='bg-img-back' src={bgImg3} />
         </ParallaxLayer>
 
         {/* FOOD TYPE CAROUSEL */}
@@ -247,19 +256,19 @@ const Home = () => {
 
         {/* FOOTER SECTION */}
         <ParallaxLayer
-            offset={0.8}
-            speed={0}
-            className='bg-img2'
+            offset={3}
+            sticky={{start:3, end:3}}
+            speed={2}
             style={{
-                // backgroundColor: "green",
-                backgroundSize:"cover",
-                backgroundPosition: "center",
-                width: "100%",
-                height: "98vh",
-            }}
-        > 
+              width:"100%",
+              height:"38vh",
+              color:"white",
+              zIndex:"-2"
+              // backgroundColor:"green",
+            }}> 
+          <Footer />
         </ParallaxLayer>
-
+            
       </Parallax>
     </div>
   );

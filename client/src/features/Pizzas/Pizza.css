@@ -21,7 +21,7 @@
 
 .food-card .food-card_img img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     -o-object-fit: cover;
     object-fit: cover;
 }
@@ -130,6 +130,12 @@
     border-width: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.minus-button {
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
 @media (min-width: 992px) {
