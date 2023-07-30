@@ -207,7 +207,7 @@
       "price": 13.99,
       "rating": 4.2,
       "brand": "Pizza Hut",
-      "image": "https://www.homeruninnpizza.com/wp-content/uploads/2017/05/recipe-mexican-fiesta-pizza_221.jpg",
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/mexican-fiesta.559a1961ca021b8fb90367c6918e50f1.1.jpg",
       "vegetarian": false
     },
     {
@@ -253,29 +253,20 @@
   ],
   "cart": [
     {
-      "id": 9,
-      "title": "Supreme",
-      "description": "An all-in-one pizza with a variety of toppings, including pepperoni, sausage, bell peppers, onions, and olives.",
-      "brand": "Papa John's",
-      "image": "https://www.southernliving.com/thmb/UuflED14dkNrrm-TFbkz42Z5mRg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sl_supremepizza_00072-2000-4cab71bd67774233b45f05e4e32fdfde.jpg",
-      "price": 13.99,
-      "quantity": 1
+      "id": 10,
+      "title": "Spinach and Feta",
+      "description": "A vegetarian delight topped with fresh spinach, feta cheese, onions, and garlic.",
+      "brand": "Pizzaria Italiana",
+      "image": "https://thelittlestcrumb.com/wp-content/uploads/spinach-and-feta-pizza-featured-image.jpg",
+      "price": 11.99,
+      "quantity": 2
     },
     {
-      "id": 8,
-      "title": "Four Cheese",
-      "description": "A cheese lover's delight with a blend of mozzarella, cheddar, feta, and gorgonzola cheeses.",
+      "id": 4,
+      "title": "Vegetarian",
+      "description": "A pizza loaded with fresh vegetables like bell peppers, mushrooms, onions, and olives.",
       "brand": "Pizza Express",
-      "image": "https://kitchenatics.com/wp-content/uploads/2020/09/Cheese-pizza-1.jpg",
-      "price": 12.99,
-      "quantity": 1
-    },
-    {
-      "id": 7,
-      "title": "Mushroom and Olive",
-      "description": "Pizza topped with sautéed mushrooms, black olives, mozzarella cheese, and a sprinkle of herbs.",
-      "brand": "Domino's Pizza",
-      "image": "https://i.pinimg.com/originals/15/45/3a/15453aa1b8f3aa31b287c8a10785134d.jpg",
+      "image": "https://theyummybowl.com/wp-content/uploads/VEGETARIAN-PIZZA-GF-REC-500x500.jpg",
       "price": 11.99,
       "quantity": 1
     },
@@ -287,15 +278,7 @@
       "image": "https://recipes.net/wp-content/uploads/2020/03/dominos-copycat-hawaiian-pizza-recipe.jpg",
       "price": 10.99,
       "quantity": 1
-    },
-    {
-      "id": 5,
-      "title": "Meat Lovers",
-      "description": "For meat enthusiasts, this pizza is topped with a variety of meats like pepperoni, sausage, bacon, and ham.",
-      "brand": "Papa John's",
-      "image": "https://www.perfectitaliano.com.au/content/dam/perfectitaliano-aus/recipe/0_desktop/Desktop-MeatLovers-Pizza.jpg",
-      "price": 13.99,
-      "quantity": 1
     }
-  ]
+  ],
+  "popular": []
 }

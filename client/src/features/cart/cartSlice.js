@@ -50,7 +50,7 @@ export const cartSlice = createSlice({
     },
     setCloseCart: (state, action) => {
       state.cartState = action.payload.cartState;
-    },    
+    },   
   },
   extraReducers: (builder) => {
     builder

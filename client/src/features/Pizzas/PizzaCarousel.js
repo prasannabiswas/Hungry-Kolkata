@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import "./Pizza.css";
 import { addAsync } from '../cart/cartSlice';
 
+import { MinusIcon, PlusIcon} from '@heroicons/react/24/solid';
+
 // Splider Imports
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 // import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
@@ -68,7 +70,7 @@ const PizzaCarousel = () => {
                     <Stack spacing={1}>                        
                         <Rating name="half-rating-read" defaultValue={items.rating} precision={0.5} readOnly />
                     </Stack>
-                    <div style={{cursor:"pointer", scale: "2"}} onClick={()=>dispatch(addAsync(items))}><i class="bi bi-bag-plus"></i></div>
+                    {/* <div style={{cursor:"pointer", scale: "2"}} onClick={()=>dispatch(addAsync(items))}><i class="bi bi-bag-plus"></i></div> */}
                     </div>
                     <hr/>
                     <div className="space-between">
@@ -76,16 +78,12 @@ const PizzaCarousel = () => {
                             <span>{items.price}$</span>
                         </div>
                         <div className="food-card_order-count">
-                            <div className="input-group mb-3">
-                              <div className="input-group-prepend">
-                                <button className="btn btn-outline-secondary minus-btn" type="button" id="button-addon1"><i class="bi bi-dash-square"></i></button>
-                              </div>
-                              <input type="text" className="form-control input-manulator" aria-label="Example text with button addon" aria-describedby="button-addon1" value="1" />
-                            <div className="input-group-append">
-                              <button className="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><i class="bi bi-plus-square"></i></button>
-                            </div>
-                          </div>
-                      </div>
+                            <div className="input-group mb-3" style={{backgroundColor:"",display:"flex", alignItems:"center", justifyContent:"center" }}>
+                              <span style={{cursor:"pointer", scale: "3",}} onClick={()=>dispatch(addAsync(items))}>
+                                <i class="bi bi-bag-plus"></i>
+                              </span>                              
+                            </div>                            
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -101,3 +99,11 @@ const PizzaCarousel = () => {
 }
 
 export default PizzaCarousel;
+
+{/* <div className="input-group-prepend" style={{alignItems:"center", justifyContent:"center", display:"flex"}}>
+                                <button className="btn btn-outline-secondary minus-btn" type="button" id="button-addon1"><MinusIcon style={{alignItems:"center", justifyContent:"center", display:"flex", scale:"2"}} /></button>
+                              </div>
+                              <input style={{borderRadius:"10px"}} type="text" className="form-control input-manulator" aria-label="Example text with button addon" aria-describedby="button-addon1" value="1" />
+                              <div className="input-group-append" style={{alignItems:"center", justifyContent:"center", display:"flex"}}>
+                                <button className="btn btn-outline-secondary add-btn" type="button" id="button-addon1"><PlusIcon style={{alignItems:"center", justifyContent:"center", display:"flex", scale:"2"}}  /></button>
+                              </div> */}
