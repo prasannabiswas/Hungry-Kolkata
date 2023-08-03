@@ -1,0 +1,284 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "title": "Margherita",
+      "description": "Classic Neapolitan pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.",
+      "price": 9.99,
+      "rating": 4.5,
+      "brand": "Pizzaria Italiana",
+      "image": "https://www.acouplecooks.com/wp-content/uploads/2022/10/Margherita-Pizza-093.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 2,
+      "title": "Pepperoni",
+      "description": "Traditional pizza topped with tomato sauce, mozzarella cheese, and slices of spicy pepperoni.",
+      "price": 10.99,
+      "rating": 4.2,
+      "brand": "Pizza Hut",
+      "image": "https://img.freepik.com/premium-photo/fresh-tasty-pizza-with-pepperoni-isolated-white_136401-2336.jpg",
+      "vegetarian": false
+    },
+    {
+      "id": 3,
+      "title": "BBQ Chicken",
+      "description": "Delicious pizza with barbecue sauce, grilled chicken, red onions, and cilantro.",
+      "price": 12.99,
+      "rating": 4.7,
+      "brand": "Domino's Pizza",
+      "image": "https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/8164_4k.jpg",
+      "vegetarian": false
+    },
+    {
+      "id": 4,
+      "title": "Vegetarian",
+      "description": "A pizza loaded with fresh vegetables like bell peppers, mushrooms, onions, and olives.",
+      "price": 11.99,
+      "rating": 4.1,
+      "brand": "Pizza Express",
+      "image": "https://theyummybowl.com/wp-content/uploads/VEGETARIAN-PIZZA-GF-REC-500x500.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 5,
+      "title": "Meat Lovers",
+      "description": "For meat enthusiasts, this pizza is topped with a variety of meats like pepperoni, sausage, bacon, and ham.",
+      "price": 13.99,
+      "rating": 4.4,
+      "brand": "Papa John's",
+      "image": "https://www.perfectitaliano.com.au/content/dam/perfectitaliano-aus/recipe/0_desktop/Desktop-MeatLovers-Pizza.jpg",
+      "vegetarian": false
+    },
+    {
+      "id": 6,
+      "title": "Hawaiian",
+      "description": "A controversial yet delicious combination of ham, pineapple, and mozzarella cheese on a pizza.",
+      "price": 10.99,
+      "rating": 3.8,
+      "brand": "Pizza Hut",
+      "image": "https://recipes.net/wp-content/uploads/2020/03/dominos-copycat-hawaiian-pizza-recipe.jpg",
+      "vegetarian": false
+    },
+    {
+      "id": 7,
+      "title": "Mushroom and Olive",
+      "description": "Pizza topped with sautéed mushrooms, black olives, mozzarella cheese, and a sprinkle of herbs.",
+      "price": 11.99,
+      "rating": 4.3,
+      "brand": "Domino's Pizza",
+      "image": "https://i.pinimg.com/originals/15/45/3a/15453aa1b8f3aa31b287c8a10785134d.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 8,
+      "title": "Four Cheese",
+      "description": "A cheese lover's delight with a blend of mozzarella, cheddar, feta, and gorgonzola cheeses.",
+      "price": 12.99,
+      "rating": 4.6,
+      "brand": "Pizza Express",
+      "image": "https://kitchenatics.com/wp-content/uploads/2020/09/Cheese-pizza-1.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 9,
+      "title": "Supreme",
+      "description": "An all-in-one pizza with a variety of toppings, including pepperoni, sausage, bell peppers, onions, and olives.",
+      "price": 13.99,
+      "rating": 4.5,
+      "brand": "Papa John's",
+      "image": "https://www.southernliving.com/thmb/UuflED14dkNrrm-TFbkz42Z5mRg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sl_supremepizza_00072-2000-4cab71bd67774233b45f05e4e32fdfde.jpg",
+      "vegetarian": false
+    },
+    {
+      "id": 10,
+      "title": "Spinach and Feta",
+      "description": "A vegetarian delight topped with fresh spinach, feta cheese, onions, and garlic.",
+      "price": 11.99,
+      "rating": 4,
+      "brand": "Pizzaria Italiana",
+      "image": "https://thelittlestcrumb.com/wp-content/uploads/spinach-and-feta-pizza-featured-image.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 11,
+      "title": "Buffalo Cauliflower",
+      "description": "A vegetarian twist on buffalo chicken pizza, featuring spicy buffalo cauliflower, ranch dressing, and mozzarella cheese.",
+      "price": 12.99,
+      "rating": 4.3,
+      "brand": "Pizza Hut",
+      "image": "https://www.crowdedkitchen.com/wp-content/uploads/2020/08/buffalo-cauliflower-pizza.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 12,
+      "title": "Paneer Tikka",
+      "description": "An Indian-inspired pizza topped with spicy paneer tikka, bell peppers, onions, and a tangy sauce.",
+      "price": 13.99,
+      "rating": 4.2,
+      "brand": "Domino's Pizza",
+      "image": "https://www.cookwithmanali.com/wp-content/uploads/2014/12/Paneer-Pizza.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 13,
+      "title": "Veggie Feast",
+      "description": "A veggie-loaded pizza with a variety of colorful vegetables like tomatoes, bell peppers, corn, olives, and mushrooms.",
+      "price": 12.99,
+      "rating": 4.4,
+      "brand": "Pizza Express",
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veggie-feast.3777f9846c8e993276a25838b8737ea7.1.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 14,
+      "title": "Jalapeno Popper",
+      "description": "A spicy and cheesy pizza topped with cream cheese, jalapenos, cheddar cheese, and bacon bits.",
+      "price": 11.99,
+      "rating": 4.1,
+      "brand": "Papa John's",
+      "image": "https://howtothisandthat.com/wp-content/uploads/2018/03/keto-diet-tips-2.png",
+      "vegetarian": false
+    },
+    {
+      "id": 15,
+      "title": "Artichoke and Tomato",
+      "description": "A flavorful combination of marinated artichoke hearts, sun-dried tomatoes, mozzarella cheese, and pesto sauce.",
+      "price": 12.99,
+      "rating": 4.6,
+      "brand": "Pizzaria Italiana",
+      "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/exps175485_TH153341B11_24_1b.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 16,
+      "title": "Vegan BBQ Jackfruit",
+      "description": "A vegan pizza featuring tangy barbecue jackfruit, red onions, bell peppers, and dairy-free cheese.",
+      "price": 13.99,
+      "rating": 4.3,
+      "brand": "Pizza Hut",
+      "image": "https://lettucevegout.com/wp-content/uploads/2023/03/Jackfruit-pizza.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 17,
+      "title": "Caprese",
+      "description": "A light and refreshing pizza topped with fresh tomatoes, mozzarella cheese, basil leaves, and balsamic glaze.",
+      "price": 10.99,
+      "rating": 4.5,
+      "brand": "Domino's Pizza",
+      "image": "https://hellolittlehome.com/wp-content/uploads/2019/06/caprese-pizza-5.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 18,
+      "title": "Greek",
+      "description": "An authentic Greek pizza with toppings like feta cheese, kalamata olives, red onions, and tzatziki sauce.",
+      "price": 12.99,
+      "rating": 4.7,
+      "brand": "Pizza Express",
+      "image": "https://www.cookingclassy.com/wp-content/uploads/2013/10/greek-pizza2+srgb.-450x500.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 19,
+      "title": "Paneer Makhani",
+      "description": "A rich and creamy pizza topped with paneer (Indian cottage cheese), buttery tomato sauce, and Indian spices.",
+      "price": 11.99,
+      "rating": 4.4,
+      "brand": "Papa John's",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/0d/63/b3/a4/paneer-makhani-pizza.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 20,
+      "title": "Truffle Mushroom",
+      "description": "A gourmet pizza featuring truffle oil, assorted mushrooms, mozzarella cheese, and fresh thyme.",
+      "price": 12.99,
+      "rating": 4.3,
+      "brand": "Pizzaria Italiana",
+      "image": "https://www.foodiecrush.com/wp-content/uploads/2018/05/Truffle-Mushroom-Pizza-foodiecrush.com-017.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 21,
+      "title": "Mexican Fiesta",
+      "description": "A pizza packed with Mexican flavors, topped with seasoned ground beef, black beans, jalapenos, and salsa.",
+      "price": 13.99,
+      "rating": 4.2,
+      "brand": "Pizza Hut",
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/mexican-fiesta.559a1961ca021b8fb90367c6918e50f1.1.jpg",
+      "vegetarian": false
+    },
+    {
+      "id": 22,
+      "title": "Quattro Stagioni",
+      "description": "A traditional Italian pizza divided into four sections with different toppings, including artichokes, ham, mushrooms, and olives.",
+      "price": 12.99,
+      "rating": 4.6,
+      "brand": "Domino's Pizza",
+      "image": "https://travelfoodatlas.com/wp-content/uploads/2021/07/Quattro-Stagioni-Pizza.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 23,
+      "title": "Spicy Paneer",
+      "description": "An Indian-inspired pizza featuring spicy paneer, bell peppers, onions, and a tangy tomato sauce.",
+      "price": 11.99,
+      "rating": 4.5,
+      "brand": "Pizza Express",
+      "image": "https://www.cremeux.in/wp-content/uploads/2022/07/Spicy-Tandoori-Paneer-Pizza.png",
+      "vegetarian": true
+    },
+    {
+      "id": 24,
+      "title": "Vegan Garden",
+      "description": "A vegan-friendly pizza loaded with a variety of fresh vegetables, including tomatoes, bell peppers, onions, and mushrooms.",
+      "price": 12.99,
+      "rating": 4.3,
+      "brand": "Papa John's",
+      "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Garden-Fresh-Grilled-Veggie-Pizza_EXPS_SDJJ18_215090_B02_13_3b.jpg",
+      "vegetarian": true
+    },
+    {
+      "id": 25,
+      "title": "Pesto and Sundried Tomato",
+      "description": "A delightful pizza topped with basil pesto, sundried tomatoes, mozzarella cheese, and a sprinkle of pine nuts.",
+      "price": 11.99,
+      "rating": 4.4,
+      "brand": "Pizzaria Italiana",
+      "image": "https://famfoodery.com/wp-content/uploads/2022/08/IMG_1423-sundried-tomato-pizza.jpg",
+      "vegetarian": true
+    }
+  ],
+  "cart": [
+    {
+      "id": 10,
+      "title": "Spinach and Feta",
+      "description": "A vegetarian delight topped with fresh spinach, feta cheese, onions, and garlic.",
+      "brand": "Pizzaria Italiana",
+      "image": "https://thelittlestcrumb.com/wp-content/uploads/spinach-and-feta-pizza-featured-image.jpg",
+      "price": 11.99,
+      "quantity": 2
+    },
+    {
+      "id": 4,
+      "title": "Vegetarian",
+      "description": "A pizza loaded with fresh vegetables like bell peppers, mushrooms, onions, and olives.",
+      "brand": "Pizza Express",
+      "image": "https://theyummybowl.com/wp-content/uploads/VEGETARIAN-PIZZA-GF-REC-500x500.jpg",
+      "price": 11.99,
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "title": "Hawaiian",
+      "description": "A controversial yet delicious combination of ham, pineapple, and mozzarella cheese on a pizza.",
+      "brand": "Pizza Hut",
+      "image": "https://recipes.net/wp-content/uploads/2020/03/dominos-copycat-hawaiian-pizza-recipe.jpg",
+      "price": 10.99,
+      "quantity": 1
+    }
+  ],
+  "popular": []
+}
