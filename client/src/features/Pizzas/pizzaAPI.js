@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export function fetchPizzas(){
-    return axios.get(`http://localhost:8080/pizzas`);
+    return axios.get(`https://food-orderind-appmern-api-pizza-icecream.onrender.com/pizzas`);
 }
