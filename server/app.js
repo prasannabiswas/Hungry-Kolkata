@@ -17,6 +17,10 @@ app.get("/pizzas", (req,res)=>{
     res.send(backApi.pizzas);
 });
 
+app.get("/cart", (req,res)=>{
+    res.send(backApi.cart);
+});
+
 
 app.listen(port, ()=>{
     console.log(`Server sunning on port ${port}`);
