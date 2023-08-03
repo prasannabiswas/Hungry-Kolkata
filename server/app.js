@@ -4,11 +4,13 @@ const cors = require("cors");
 const app = express();
 const backApi = require("./db.json");
 
+const port = process.env.PORT || 8080;
+
 app.use(cors());
 
 
 app.get("/",(req,res)=>{
-    res.send("Hello");
+    res.send("Personal API for FoodOrdering App");
 });
 
 app.get("/pizzas", (req,res)=>{
@@ -16,6 +18,6 @@ app.get("/pizzas", (req,res)=>{
 });
 
 
-app.listen(3000, ()=>{
-    console.log("Server sunning on port 3000");
+app.listen(port, ()=>{
+    console.log(`Server sunning on port ${port}`);
 });
